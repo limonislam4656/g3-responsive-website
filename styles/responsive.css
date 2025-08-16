@@ -1,102 +1,80 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-/* shared style */
+/* shared styles */
 .display-flex{
     display: flex;
 }
 .btn-primary{
     background-color: #FF900E;
-    color: white;
-    padding: 20px 25px;
+    color: #FFFFFF;
+    padding: 21px 25px;
     font-size: 1.25rem;
     font-weight: 600;
     border-radius: 8px;
-    border: none;
 }
-main{
-    max-width: 1440px;
-    margin: 0 auto;
-}
-main > section{
-    margin-top: 130px;
-}
-/* dark-2 */
+/* Dark-2 */
 .text-gray{
     color: #424242;
 }
-/* dark-3 */
+
+/* Dark-3 */
 .text-light-gray{
     color: #727272;
 }
-.bg-light {
+.bg-light{
     background-color: rgba(255, 144, 14, 0.1);
-    font-weight: 1920px;
 }
-/* header style  */
+/* header style */
 
-/* navnar related style */
-.navbar, .banner{
-   justify-content: space-between;
-   align-items: center;
-}
+/* navbar related-style */
 .brand{
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 .nav-item{
     list-style: none;
-    margin-right: 30px;
+    margin-right: 30px; 
 }
 .nav-link{
     text-decoration: none;
-    font-weight: 477px;
+    font-weight: 500;
 }
-.baneer-content{
-    max-width: 862px;
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar, .banner{
+    max-width: 1450px;
+    margin: 0 auto;
+
+}
+/* Banner related style */
+.banner-content{
+    max-width: 850px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
-.baneer-title{
-    font-weight: 862;
+.banner-title{
+    font-weight: 700;
     font-size: 4rem;
 }
-.baneer-image{
+.banner-img{
     width: 100%;
 }
-
-/* team and feature related styles*/
-.teams{
-    align-items: center;
-}
-.team-img-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 24px;
-}
-.our-features{
-    margin-left: 130px;
-    max-width: 530px;
-}
-.feature-title{
-    font-size: 2.8rem;
-    font-weight: 700px;
-}
-#quick-list{
-    font-weight: 500px;
-}
+/* footer style */
 
 /* responsive media query */
-@media screen and (min-width:576px) and  (max-width: 992pxpx) {
-    .navbar, .nav-links{
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links {
         flex-direction: column;
     }
-    .our-features{
-    margin: 50px auto;
-}
 }
